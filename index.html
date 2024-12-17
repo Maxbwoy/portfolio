@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="logo1.png" type="image/x-icon">
+</head>
+<body>
+  <header class="header">   
+    <div class="container">
+      <div class="burger-menu" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="cv">
+        <p class="cv-p">Download my cv here</p>
+        <a class="cv-a" href="cv.pdf" download="cv.pdf">Download</a>
+      </div>
+      <img src="logo1.png" alt="logo" class="logo">
+      <nav class="nav nav-menu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="container">
+      <h2>Hello, I'm <span>Abel Mawuse Amedor</span></h2>
+      <p>A passionate <strong>Web Developer</strong> crafting beautiful and functional websites.</p>
+      <a href="#projects" class="btn">View My Work</a>
+      <a href="#" class="github">Github</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I’m a web developer with a strong background in creating responsive and user-friendly designs. My skills include HTML, CSS, JavaScript, React, php, photoshop and more. I love solving problems and bringing creative ideas to life.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <img src="soccershoes3.jpg" alt="soccershoes3">
+          <div class="project-langs-container">
+            <P>HTML</P>
+            <P>CSS</P>
+            <P>JavaScript</P>
+            <P>React</P>
+            <P>Java</P>
+          </div>
+          <h3>Project 1</h3>
+          <p>Brief description of the project.</p>
+          <a href="#"  class="project-a" target="_blank">View Project</a>
+        </div>
+        <!--<div class="project">
+          <h3>Project 2</h3>
+          <p>Brief description of the project.</p>
+          <a href="#" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Project 3</h3>
+          <p>Brief description of the project.</p>
+          <a href="#" target="_blank">View Project</a>-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form action="mail.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required autocomplete="true">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required autocomplete="true">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section> 
+  <!--<a href="smsto:+233505404401">Phone</a>
+  <a href="https://wa.me/+233505404401"><i class="material-icons">facebook</i> WhatsApp</a>-->
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+  <!--<script src="node.js"></script>-->
+</body>
+</html>
