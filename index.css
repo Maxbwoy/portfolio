@@ -152,11 +152,11 @@ body {
   margin-bottom: 5px;
 }
 .project-langs-container {
-  border: 2px solid red;
+  /*border: 2px solid red;*/
   height: 20px;
   width: 100%;
   display: flex;
-  gap: 20px;
+  gap: 8px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
