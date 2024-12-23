@@ -555,7 +555,6 @@ font-size: 1.5rem;
   padding-bottom: 5px;
 }
 .contact-container .social .links {
-  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
   gap: 20px;
