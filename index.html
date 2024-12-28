@@ -3,28 +3,36 @@
 <head>
   <meta name="description" content="Abel Mawuse Amedor's Portfolio Website showcasing projects and contact details.">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
-  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/all.cs">
   <link rel="stylesheet" href="css/index.css">
   <link rel="icon" href="logo/logo1.png" type="image/x-icon">
 </head>
 <body>
   <header class="header">   
     <div class="container">
-      <div class="burger-menu" onclick="toggleMenu()">
+      <div class="burger-menu" onclick="toggleMenu()" aria-label="burger manu">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
       </div>
-      <!-- <div class="cv">
+      <div class="christmas" style="background: url(pic/back.png); background-color: rgba(3, 3, 3, 0.322); background-blend-mode: multiply; border-radius: 20px;">
+        <marquee behavior="scroll" direction="Left">
+          <h3>Happy merry Christmas and prosperous New Year....
+            <img src="pic/christmas.png" alt="christmas wish" srcset="">
+          </h3>
+        </marquee>
+      </div>
+      <div class="cv">
         <p class="cv-p">Download my cv here</p>
-        <a class="cv-a" href="pdf/cv.pdf" download="pdf/cv.pdf"><span class="fa fa-file-download"></span></a>
-      </div>-->
+        <a class="cv-a" href="pdf/cv.pdf" download="pdf/cv.pdf">Download <span class="fa fa-file-download"></span></a>
+      </div>
       <img src="logo/logo.png" alt="logo" class="logo">
       <nav class="nav nav-menu">
         <ul>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -37,26 +45,95 @@
     <div class="container">
       <h2>Hello, I'm <span>Abel Mawuse Amedor</span></h2>
       <p>A passionate <strong>Front-end Engineer</strong> and <strong>Graphic Designer</strong> crafting beautiful and functional websites and graphics.</p>
-      <a href="#projects" class="btn">View My Works</a>
+      <a href="#projects" class="btn">View My Works <span class="far fa-eye"></span></a>
       <a href="https://github.com/Maxbwoy" class="github" target="_blank" rel="noopener noreferrer">Github<i style="color: white; margin-left: 5px; font-size: 25px;" class="fab fa-github-square"></i></a>
     </div>
     <!--<button onclick="makeCall">Call us</button>-->
   </section>
 
-  <!--<section id="skill" class="skill">
-    <h2>skills</h2>
+  <section id="skills" class="skills">
+    <h2>Technical Skills</h2>
     <div class="container">
-      <p>A passionate <strong>Front-end Engineer</strong> and <strong>Graphic Designer</strong> crafting beautiful and functional websites and graphics.</p>
-      <a href="#projects" class="btn">View My Works</a>
-      <a href="https://github.com/Maxbwoy" class="github" target="_blank" rel="noopener noreferrer">Github<i style="color: white; margin-left: 5px; font-size: 25px;" class="fab fa-github-square"></i></a>
-    </div>-->
+      <div class="skill-list" id="skill-lists">
+        <div class="skill">
+          <span class="fab fa-html5 fa-3x"></span>
+          <div class="names">
+            <h3>Html</h3>
+          </div>
+        </div>
+        <div class="skill">
+          <span class="fab fa-css fa-3x"></span>
+          <div class="names">
+            <h3>Css</h3>
+          </div>
+        </div>
+        <div class="skill">
+          <span class="fab fa-square-js fa-3x"></span>
+          <div class="names">
+          <h3>JavaScript</h3>
+          </div>
+        </div>
+        <div class="skill">
+          <span class="fab fa-react fa-3x"></span>
+          <div class="names">
+          <h3>React</h3>
+          </div>
+        </div>
+        <div class="skill">
+          <span class="fa fa-database fa-3x"></span>
+          <div class="names">
+          <h3>Sql</h3>
+          </div>
+        </div>
+        <div class="skill">
+          <span class="fab fa-php fa-3x"></span>
+          <div class="names">
+          <h3>Php</h3>
+          </div>
+        </div>
+        <div class="skill">
+          <span class="fab fa-square-git fa-3x"></span>
+          <div class="names">
+            <h3>Git</h3>
+          </div>
+        </div>
+        <div class="skill">
+          <img src="pic/adobe-illustrator.abad2cbc.svg" alt="">
+          <div class="names">
+            <h3>Illustrator</h3>
+          </div>
+        </div>
+        <div class="skill">
+          <img src="pic/figma2.09b2413a.svg" alt="figma">
+          <div class="names">
+            <h3>Figma</h3>
+          </div>
+        </div>
+        <div class="skill">
+          <img src="pic/photoshop.778ccaa3.svg" alt="photoshop">
+          <div class="names">
+            <h3>Photoshop</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="visual-other-skills">
+          <h2>Other skills</h2>
+          <ul>
+            <li>Critical Thinking</li>
+            <li>Team work</li>
+            <li>Planning</li>
+            <li>Leadership</li>
+            <li>Problem solving</li>
+          </ul>
+        </div>
   </section>
 
   <section id="about" class="about">
     <div class="container">
       <h2>About Me</h2>
       <p>
-        I’m a web developer with a strong background in creating responsive and user-friendly designs. My skills include HTML, CSS, JavaScript, React, php, photoshop and more. I love solving problems and bringing creative ideas to life.
+        I’m frontend developer with a strong background in creating responsive and user-friendly designs. My skills include HTML, CSS, JavaScript, React, php, photoshop and more. I love solving problems and bringing creative ideas to life.
       </p>
     </div>
   </section>
@@ -80,14 +157,26 @@
     </div>
   </section>
 
+  <section class="certificates" id="certificates">
+    <h2>My <span>Certifictaes</span></h2>
+    <div class="container">
+      <div class="certificate">
+        <img src="certificates/html.jpg" alt="certificate">
+        <img src="certificates/css.jpg" alt="certificate">
+      </div>
+    </div>
+  </section>
+
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contact</h2>
-      <form method="POST" netlify>
+      <form method="POST" data-netlify="true">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" minlength="5" required>
         <label for="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
         <button type="submit" class="btn">Send Message</button>
@@ -99,7 +188,7 @@
           <h3>social media</h3>
           <div class="links">
             <a href="https://wa.me/+233505404401?text=Hello! I would like to inquire about your services." target="_blank" rel="noopener noreferrer"><span style="color: green; font-size: 50px;" class="fab fa-whatsapp"></span></a>
-            <a href="https://www.facebook.com/Halfcedi" target="_blank" rel="noopener noreferrer"><span style="font-size: 50px;" class="fab fa-facebook"></span></a>
+            <a href="https://www.facebook.com/Halfcedi" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span style="font-size: 50px;" class="fab fa-facebook"></span></a>
             <a href="https://x.com/Abel_Maxbwoy" target="_blank" rel="noopener noreferrer"><span style="color: black; font-size: 50px;" class="fab fa-x-twitter"></span></a>
             <a href="https://linkedin.com/in/abel-amedor" target="_blank" rel="noopener noreferrer"><span style="font-size: 50px;" class="fab fa-linkedin"></span></a>
             <!--<a href="https://wa.me/+233505404401"><span style="color: black; font-size: 50px;" class="fa fa-copyright"></span></a>-->

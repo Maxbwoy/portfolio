@@ -1,3 +1,13 @@
+@import url(fonts/fa-brands-400.ttf);
+@import url(fonts/fa-regular-400.ttf);
+@import url(fonts/fa-solid-900.ttf);
+@import url(fonts/fa-v4compatibility.ttf);
+
+body {
+  font-family: 'fa-solid-900', Georgia, 'Times New Roman', Times, serif;
+  inset: unset;
+}
+
 @media (min-width:781px) {
 /* General Reset */
 body, h1, h2, h3, p, ul, li, a {
@@ -53,6 +63,35 @@ body {
 .header .nav ul li a:hover {
   color: #f4a261;
 }
+
+.christmas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 55px;
+  display: none;
+}
+
+.christmas marquee {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.christmas img  {
+  width: 30px;
+  height: 40px;
+  align-items: end;
+}
+
+.christmas h3 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  color: linear-gradient(158deg, red, blue);
+  align-items: end;
+}
+
 .cv {
   display: none;
 }
@@ -231,6 +270,148 @@ body {
   text-align: center;
   padding: 1rem 0;
 }
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ec6f0862;
+}
+
+.skills .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 21rem;
+  border-radius: 19px;
+}
+
+.skills .skill-list {
+  display: flex;
+  width: 25rem;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  gap: 25px;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.skill {
+  display: flex;
+  background: #171818b4;
+  flex-direction: column;
+  width: 7rem;
+  border-radius: 10px;
+  filter: drop-shadow(3px 3px 2px red);
+  padding: 5px;
+}
+
+.skill:hover {
+  background: #56c5c5b4;
+  transform:translateY(-5px);
+  filter: drop-shadow(3px 3px 2px rgb(255, 0, 242));
+  transition:  background 3s;
+}
+
+
+.skill .names {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.skill-list .fa-html5 {
+  color: rgb(255, 192, 17);
+}
+
+.skill-list .fa-css {
+  color: rgb(121, 6, 252);
+}
+
+.skill-list .fa-react {
+  color: rgb(17, 180, 255);
+}
+
+.skill-list .fa-square-js {
+  color: rgb(255, 239, 17);
+}
+
+.skill-list .fa-database {
+  color: rgb(14, 250, 54);
+}
+
+.skill-list .fa-php {
+  color: rgb(108, 17, 255);
+}
+
+.skill-list .fa-square-git {
+  color: rgb(247, 152, 10);
+}
+
+.visual-other-skills {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background-color: #171818b4;
+  padding: 5px;
+  display: none;
+}
+
+.visual-other-skills ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -20px;
+}
+
+#ul1 li {
+  flex-wrap: wrap;
+  margin: 25px;
+  font-size: 15px;
+}
+
+.visual-other-skills h2 {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  background-color: #1cc0ad;
+}
+
+
+.skill img {
+  height: 40px;
+}
+
+.certificates {
+  background-color: rgba(64, 64, 187, 0.753);
+}
+
+.certificates h2 {
+  text-align: center;
+}
+
+.certificates h2 span {
+  color: white;
+}
+
+.certificates .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificates .container .certificate img {
+  width: 300px;
+  border: 5px solid orangered;
+}
 }
 
 @media (max-width: 780px) {
@@ -334,11 +515,37 @@ font-size: 1.5rem;
   transform: translateY(-10px) rotate(-45deg);
 }
 
+.christmas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+}
+
+.christmas marquee {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.christmas img  {
+  width: 30px;
+  height: 40px;
+}
+
+.christmas h3 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  color: rgb(74, 255, 3);
+  align-items: end;
+}
 .cv {
   /*border: 2px solid red;*/
   padding: 2px;
   display: flex;
   flex-direction: column;
+  display: none;
 }
 
 .cv-p {
@@ -415,18 +622,18 @@ font-size: 1.5rem;
   border: 1px solid #ddd;
   padding: 5px;
   margin: auto;
-  width: 45%;
+  width: 20rem;
   text-align: center;
   margin-bottom: 20px;
   border-radius: 5px;
   transition: transform 0.3s;
-  height:fit-content;
+  height: fit-content;
   padding-bottom: 5px;
   filter: drop-shadow(10px 7px 10px orange);
-  animation: rotate 3s ease-out;
+  animation: projectcard 3s ease-out;
 }
 
-@keyframes rotate {
+@keyframes projectcard {
   from {
     rotate: 0;
   }
@@ -487,7 +694,6 @@ font-size: 1.5rem;
 
 /* Contact Section */
 .contact {
-  width: 100%;
   background: #ffda0a9c
 
 }
@@ -505,10 +711,12 @@ font-size: 1.5rem;
 .contact input, .contact textarea {
   margin-bottom: 20px;
   padding: 10px;
-  width: 100%;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
+
+/*.contact textarea {
+}*/
 
 .contact .btn {
   background: #264653;
@@ -570,12 +778,142 @@ font-size: 1.5rem;
   }
 }
 
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ec6f0862;
+}
 
-/*.contact-container .phone {
-  background-color: blue;
-  width: 100%;
-  height: fit-content;
+.skills .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 21rem;
+  border-radius: 19px;
+}
+
+.skills .skill-list {
+  display: flex;
+  width: 20rem;
+  flex-wrap: wrap;
+  /*background: rgba(252, 227, 5, 0.363);*/
+  border-radius: 20px;
+  gap: 25px;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.skill {
+  display: flex;
+  background: #171818b4;
+  flex-direction: column;
+  width: 7rem;
+  border-radius: 10px;
+  filter: drop-shadow(3px 3px 2px red);
+  padding-top: 5px;
+}
+
+.skill:hover {
+  background: #56c5c5b4;
+  transform:translateY(-5px);
+  filter: drop-shadow(3px 3px 2px rgb(255, 0, 242));
+  transition:  background 3s;
+}
+
+
+.skill .names {
   display: flex;
   flex-direction: column;
-}*/
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.skill-list .fa-html5 {
+  color: rgb(255, 192, 17);
+}
+
+.skill-list .fa-css {
+  color: rgb(121, 6, 252);
+}
+
+.skill-list .fa-react {
+  color: rgb(17, 180, 255);
+}
+
+.skill-list .fa-square-js {
+  color: rgb(255, 239, 17);
+}
+
+.skill-list .fa-database {
+  color: rgb(14, 250, 54);
+}
+
+.skill-list .fa-php {
+  color: rgb(108, 17, 255);
+}
+
+.skill-list .fa-square-git {
+  color: rgb(247, 152, 10);
+}
+
+.visual-other-skills {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  color: rgb(255, 255, 255);
+  background-color: #171818b4;
+  display: none;
+}
+
+.visual-other-skills ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+#ul1 li {
+  margin: 20px;
+  font-size: 15px;
+}
+
+.visual-other-skills h2 {
+  width: 100%;
+  text-align: center;
+}
+
+
+.skill img {
+  height: 40px;
+  margin-top: 5px;
+}
+
+.certificates {
+  background-color: rgba(64, 64, 187, 0.753);
+}
+
+.certificates h2 {
+  text-align: center;
+}
+
+.certificates h2 span {
+  color: white;
+}
+
+.certificates .container {
+  background-color: rgba(64, 64, 187, 0.753);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.certificates .container .certificate img {
+  width: 97%;
+  border: 5px solid orangered;
+}
 }
