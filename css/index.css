@@ -545,7 +545,6 @@ font-size: 1.5rem;
   padding: 2px;
   display: flex;
   flex-direction: column;
-  display: none;
 }
 
 .cv-p {
