@@ -64,33 +64,6 @@ body {
   color: #f4a261;
 }
 
-.christmas {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-left: 55px;
-  display: none;
-}
-
-.christmas marquee {
-  display: flex;
-  flex-direction: row;
-  
-}
-
-.christmas img  {
-  width: 30px;
-  height: 40px;
-  align-items: end;
-}
-
-.christmas h3 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-style: italic;
-  color: linear-gradient(158deg, red, blue);
-  align-items: end;
-}
 
 .cv {
   display: none;
@@ -134,7 +107,7 @@ body {
 }
 
 /* About Section */
-.about, .projects, .contact {
+.about, .contact {
   padding: 4rem 1rem;
   background: #f9f9f9;
 }
@@ -145,22 +118,31 @@ body {
 }
 
 /* Projects Section */
+.projects {
+  background: #f9f9f9;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
 .project-list {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .project {
   background: #fff;
   border: 1px solid #ddd;
   padding: 5px;
-  width: 25%;
+  width: 30%;
   text-align: center;
   margin-bottom: 20px;
   border-radius: 5px;
   transition: transform 0.3s;
-  height: fit-content;
+  height: 24rem;
   filter: drop-shadow(10px 7px 10px orange);
   animation: rotate 3s ease-out;
 }
@@ -531,37 +513,11 @@ font-size: 1.5rem;
   transform: translateY(-10px) rotate(-45deg);
 }
 
-.christmas {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-left: 5px;
-}
-
-.christmas marquee {
-  display: flex;
-  flex-direction: row;
-  
-}
-
-.christmas img  {
-  width: 30px;
-  height: 40px;
-}
-
-.christmas h3 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-style: italic;
-  color: rgb(74, 255, 3);
-  align-items: end;
-}
 .cv {
   /*border: 2px solid red;*/
   padding: 2px;
   display: flex;
   flex-direction: column;
-  display: none;
 }
 
 .cv-p {
