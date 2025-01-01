@@ -1,3 +1,8 @@
+@import url(fonts/fa-brands-400.ttf);
+@import url(fonts/fa-regular-400.ttf);
+@import url(fonts/fa-solid-900.ttf);
+@import url(fonts/fa-v4compatibility.ttf);
+
 body {
   font-family: 'fa-solid-900', Georgia, 'Times New Roman', Times, serif;
   inset: unset;
@@ -21,6 +26,8 @@ body {
   background: #333;
   color: #fff;
   padding: 1rem 0;
+  position: sticky;
+  top: 0;
   font-size: 1.5rem;
   padding-right: 5px;
 }
@@ -190,9 +197,25 @@ body {
   transition: background 0.2s; 
 }
 
+.project-r {
+  color: #0f1ee9;
+  text-decoration: none;
+  background-color: #fff9f4;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 2px 2px 1px #7a1baa;
+  transition: background 0.2s;
+  margin-right: 10px;
+}
+
 .project-a:hover {
   background-color: #1cc0ad;
   color: white;
+}
+
+.project-r:hover {
+  background-color: #1cc024;
+  color: rgb(245, 245, 245);
 }
 
 .project img {
@@ -658,9 +681,25 @@ font-size: 1.5rem;
   transition: background 0.2s; 
 }
 
+.project-r {
+  color: #0f1ee9;
+  text-decoration: none;
+  background-color: #fff9f4;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 2px 2px 1px #7a1baa;
+  transition: background 0.2s; 
+  margin-right: 10px;
+}
+
 .project-a:hover {
   background-color: #1cc0ad;
   color: white;
+}
+
+.project-r:hover {
+  background-color: #1cc024;
+  color: rgb(255, 255, 255);
 }
 
 .project img {
