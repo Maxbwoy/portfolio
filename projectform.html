@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>project Form</title>
+</head>
+<body>
+    <form id="projectform" enctype="multipart/form-data">
+        <label for="pname">Project name:</label>
+        <input type="text" name="pname" id="pname" required placeholder="Enter project name"><br><br>
+        <label for="pdesc">Project description:</label>
+        <input type="text" name="pdesc" id="pdesc" required placeholder="Enter project description" minlength="10" maxlength="30"><br><br>
+        <label for="pimg">Project image:</label>
+        <input type="file" name="pimg" id="pimg" required><br><br>
+        <label for="purl">Project Link:</label>
+        <input type="url" name="purl" id="purl" required placeholder="Enter project view link"><br><br>
+        <label for="purlr">Project Link report:</label>
+        <input type="url" name="purlr" id="purlr" required placeholder="Enter project report link"><br><br>
+        <input type="submit" value="submit">
+    </form>
+
+    <div id="project-list"></div>
+    <script src="js/index2.js"></script>
+</body>
+</html>
