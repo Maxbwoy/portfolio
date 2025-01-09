@@ -29,7 +29,7 @@ document.getElementById("projectform").addEventListener("submit", function(event
   const purlr = formData.get("purlr");
 
 // send to server
-  fetch ("https://github.com/Maxbwoy/portfolio/tree/main/projects", {
+  fetch ("https://github.com/Maxbwoy/portfolio/", {
     method: "POST",
     body: formData,
   })
